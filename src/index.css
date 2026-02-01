@@ -204,12 +204,19 @@
 
   .btn-accent {
     background: linear-gradient(135deg, hsl(175 70% 42%) 0%, hsl(190 90% 50%) 100%);
-    @apply text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply text-navy-900 font-bold shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
   .btn-accent:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
+  }
+
+  /* Ensure button text is always readable */
+  .btn-accent,
+  .btn-accent:hover,
+  .btn-accent:focus {
+    color: hsl(220 50% 8%) !important;
   }
 
   /* Card Hover Effect */

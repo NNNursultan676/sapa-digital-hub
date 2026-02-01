@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import sapaLogo from '@/assets/sapa-logo.png';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,13 +58,12 @@ export function Header() {
       <div className="container-wide">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">S</span>
-            </div>
-            <span className="font-display font-bold text-xl text-foreground">
-              Sapa<span className="text-accent">.</span>
-            </span>
+          <a href="/" className="flex items-center">
+            <img 
+              src={sapaLogo} 
+              alt="Sapa Technologies" 
+              className="h-8 md:h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}

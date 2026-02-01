@@ -191,9 +191,9 @@ export function HeroSection() {
         >
           {[
             { value: '20+', label: t('stats.cities') },
-            { value: '150+', label: t('stats.partners') },
+            { value: '300+', label: t('stats.partners') },
             { value: '1M+', label: t('stats.applications') },
-            { value: '99.9%', label: t('stats.uptime') },
+            { value: '40+', label: t('stats.employees') },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

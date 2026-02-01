@@ -47,6 +47,7 @@ const translations: Translations = {
   'stats.cities': { ru: 'Городов Казахстана', kz: 'Қазақстан қалалары', en: 'Cities in Kazakhstan' },
   'stats.partners': { ru: 'Партнеров', kz: 'Серіктестер', en: 'Partners' },
   'stats.applications': { ru: 'Заявок обработано', kz: 'Өтінімдер өңделді', en: 'Applications Processed' },
+  'stats.employees': { ru: 'Сотрудников', kz: 'Қызметкерлер', en: 'Employees' },
   'stats.uptime': { ru: 'Время работы', kz: 'Жұмыс уақыты', en: 'Uptime' },
 
   // Products
@@ -134,6 +135,36 @@ const translations: Translations = {
   'feature.scoring': { ru: 'Скоринг и решения', kz: 'Скоринг және шешімдер', en: 'Scoring & Decisions' },
   'feature.integration': { ru: 'Интеграция', kz: 'Интеграция', en: 'Integration' },
   'feature.disbursement': { ru: 'Выдача средств', kz: 'Қаражат беру', en: 'Disbursement' },
+
+  // Team
+  'team.badge': { ru: 'Наша команда', kz: 'Біздің команда', en: 'Our Team' },
+  'team.title': { ru: 'Люди, которые создают будущее fintech', kz: 'Fintech болашағын жасайтын адамдар', en: 'People Building the Future of Fintech' },
+  'team.subtitle': { 
+    ru: 'Более 40 профессионалов, объединённых общей целью — трансформировать финансовую индустрию Казахстана', 
+    kz: '40-тан астам кәсіпқой Қазақстанның қаржы саласын өзгертуге бағытталған бірыңғай мақсатпен біріккен', 
+    en: 'Over 40 professionals united by a common goal — to transform Kazakhstan\'s financial industry' 
+  },
+  'team.employees': { ru: 'Сотрудников', kz: 'Қызметкерлер', en: 'Employees' },
+  'team.experience': { ru: 'Лет опыта', kz: 'Жыл тәжірибе', en: 'Years Experience' },
+  'team.passion': { ru: 'Вовлеченность', kz: 'Қатысу', en: 'Commitment' },
+  'team.value1.title': { ru: 'Инновации', kz: 'Инновациялар', en: 'Innovation' },
+  'team.value1.description': { 
+    ru: 'Мы постоянно исследуем новые технологии и методы для улучшения наших продуктов', 
+    kz: 'Біз өнімдерімізді жақсарту үшін жаңа технологиялар мен әдістерді үнемі зерттейміз', 
+    en: 'We constantly explore new technologies and methods to improve our products' 
+  },
+  'team.value2.title': { ru: 'Надежность', kz: 'Сенімділік', en: 'Reliability' },
+  'team.value2.description': { 
+    ru: 'Наши решения работают 24/7 с гарантией 99.9% uptime для критически важных процессов', 
+    kz: 'Біздің шешімдер маңызды процестер үшін 99.9% жұмыс уақытының кепілдігімен 24/7 жұмыс істейді', 
+    en: 'Our solutions work 24/7 with 99.9% uptime guarantee for critical processes' 
+  },
+  'team.value3.title': { ru: 'Партнерство', kz: 'Серіктестік', en: 'Partnership' },
+  'team.value3.description': { 
+    ru: 'Мы строим долгосрочные отношения, основанные на доверии и взаимной выгоде', 
+    kz: 'Біз сенім мен өзара пайдаға негізделген ұзақ мерзімді қарым-қатынастар орнатамыз', 
+    en: 'We build long-term relationships based on trust and mutual benefit' 
+  },
 };
 
 interface LanguageContextType {
