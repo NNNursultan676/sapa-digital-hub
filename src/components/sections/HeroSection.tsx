@@ -87,7 +87,7 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 py-6 text-lg border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                className="rounded-full px-8 py-6 text-lg border-white/80 bg-transparent text-white hover:bg-white/20 hover:border-white hover:text-white backdrop-blur-sm [&_svg]:text-white"
               >
                 <Play className="mr-2 w-5 h-5" />
                 {t('hero.learnMore')}

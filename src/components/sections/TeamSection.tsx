@@ -61,7 +61,7 @@ export function TeamSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-transparent to-transparent" />
             
             {/* Stats Overlay */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 hidden md:block">
               <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl mx-auto">
                 {stats.map((stat, index) => (
                   <motion.div

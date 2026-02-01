@@ -48,34 +48,12 @@ export function CTASection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="rounded-full px-8 py-6 text-lg border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                  className="rounded-full px-8 py-6 text-lg border-white/80 bg-transparent text-white hover:bg-white/20 hover:border-white hover:text-white backdrop-blur-sm [&_svg]:text-white"
                 >
                   <MessageCircle className="mr-2 w-5 h-5" />
                   {t('cta.button')}
                 </Button>
               </div>
-
-              {/* Trust Badges */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-12 pt-8 border-t border-primary-foreground/10"
-              >
-                <p className="text-primary-foreground/50 text-sm mb-4">
-                  Trusted by leading financial institutions
-                </p>
-                <div className="flex flex-wrap justify-center gap-8 opacity-60">
-                  {['Bank 1', 'Bank 2', 'MFO 1', 'MFO 2', 'Partner'].map((partner) => (
-                    <div
-                      key={partner}
-                      className="text-primary-foreground font-semibold text-lg tracking-wide"
-                    >
-                      {partner}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
             </div>
           </div>
         </motion.div>

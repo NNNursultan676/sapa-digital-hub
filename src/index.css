@@ -219,6 +219,21 @@
     color: hsl(220 50% 8%) !important;
   }
 
+  /* Ensure outline buttons on dark backgrounds have proper contrast */
+  .hero-bg button[class*="outline"],
+  .hero-bg .btn-outline {
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    color: white !important;
+  }
+
+  .hero-bg button[class*="outline"]:hover,
+  .hero-bg .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: white !important;
+    color: white !important;
+  }
+
   /* Card Hover Effect */
   .card-hover {
     @apply transition-all duration-300;
