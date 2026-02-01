@@ -9,7 +9,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import sapaLogo from '@/assets/sapa-logo.png';
+import sapaLogo from '@/assets/sapa-logo.svg';
+import modalService from '@/services/modalService';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -140,7 +141,10 @@ export function Header() {
             </DropdownMenu>
 
             {/* CTA Button */}
-            <Button className="hidden md:inline-flex btn-accent rounded-full px-6">
+            <Button 
+              className="hidden md:inline-flex btn-accent rounded-full px-6"
+              onClick={() => modalService.openModal(t('hero.cta'))}
+            >
               {t('hero.cta')}
             </Button>
 
@@ -199,7 +203,13 @@ export function Header() {
                 </div>
               ))}
               <div className="pt-4">
-                <Button className="w-full btn-accent rounded-full">
+                <Button 
+                  className="w-full btn-accent rounded-full"
+                  onClick={() => {
+                    modalService.openModal(t('hero.cta'));
+                    setIsMenuOpen(false);
+                  }}
+                >
                   {t('hero.cta')}
                 </Button>
               </div>

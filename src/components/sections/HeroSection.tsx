@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Play, Shield, Zap, Users, TrendingUp } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import modalService from '@/services/modalService';
 import heroPattern from '@/assets/hero-pattern.jpg';
 
 export function HeroSection() {
@@ -80,7 +81,11 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="btn-accent rounded-full px-8 py-6 text-lg group">
+              <Button 
+                size="lg" 
+                className="btn-accent rounded-full px-8 py-6 text-lg group"
+                onClick={() => modalService.openModal(t('hero.cta'))}
+              >
                 {t('hero.cta')}
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>

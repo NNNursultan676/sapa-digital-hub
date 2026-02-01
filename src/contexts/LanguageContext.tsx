@@ -116,6 +116,18 @@ const translations: Translations = {
   'cta.button': { ru: 'Связаться с нами', kz: 'Бізбен байланысыңыз', en: 'Contact Us' },
   'cta.demo': { ru: 'Запросить демо', kz: 'Демо сұрау', en: 'Request Demo' },
 
+  // Demo Modal
+  'demoModal.header': { ru: 'Заполните форму, и мы свяжемся с вами в ближайшее время', kz: 'Форманы толтырыңыз, біз сізбен жақын арада байланысамыз', en: 'Fill out the form and we will contact you soon' },
+  'demoModal.form.name': { ru: 'Имя', kz: 'Аты', en: 'Name' },
+  'demoModal.form.companyName': { ru: 'Название компании', kz: 'Компания атауы', en: 'Company Name' },
+  'demoModal.form.phone': { ru: 'Телефон', kz: 'Телефон', en: 'Phone' },
+  'demoModal.buttons.submit': { ru: 'Отправить', kz: 'Жіберу', en: 'Submit' },
+  'demoModal.buttons.close': { ru: 'Отмена', kz: 'Болдырмау', en: 'Cancel' },
+  'demoModal.buttons.submitting': { ru: 'Отправка...', kz: 'Жіберілуде...', en: 'Submitting...' },
+  'demoModal.validation.required': { ru: 'Пожалуйста, заполните все поля', kz: 'Барлық өрістерді толтырыңыз', en: 'Please fill in all fields' },
+  'demoModal.alerts.success': { ru: 'Заявка успешно отправлена!', kz: 'Өтінім сәтті жіберілді!', en: 'Request sent successfully!' },
+  'demoModal.alerts.error': { ru: 'Ошибка при отправке заявки. Попробуйте позже.', kz: 'Өтінімді жіберу кезінде қате пайда болды. Кейінірек қайталаңыз.', en: 'Error sending request. Please try again later.' },
+
   // Footer
   'footer.description': { 
     ru: 'Технологическая компания, создающая цифровые платформы для автоматизации кредитных процессов', 

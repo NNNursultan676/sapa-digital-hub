@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import modalService from '@/services/modalService';
 
 export function CTASection() {
   const { t } = useLanguage();
@@ -41,7 +42,11 @@ export function CTASection() {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="btn-accent rounded-full px-8 py-6 text-lg group">
+                <Button 
+                  size="lg" 
+                  className="btn-accent rounded-full px-8 py-6 text-lg group"
+                  onClick={() => modalService.openModal(t('cta.demo'))}
+                >
                   {t('cta.demo')}
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
