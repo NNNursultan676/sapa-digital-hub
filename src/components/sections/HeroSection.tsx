@@ -3,7 +3,6 @@ import { ArrowRight, Play, Shield, Zap, Users, TrendingUp } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import modalService from '@/services/modalService';
-import heroPattern from '@/assets/hero-pattern.jpg';
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -16,14 +15,7 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroPattern})` }}
-      />
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-navy-900/80" />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-navy-900">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
@@ -57,7 +49,7 @@ export function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
               <span className="text-teal-300 text-sm font-medium">
-                Fintech Solutions for Kazakhstan
+                {t('hero.badge')}
               </span>
             </motion.div>
 
