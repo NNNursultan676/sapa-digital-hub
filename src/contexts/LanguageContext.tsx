@@ -30,15 +30,20 @@ const translations: Translations = {
   'nav.faq': { ru: 'FAQ', kz: 'FAQ', en: 'FAQ' },
   
   // Hero
+  'hero.badge': { 
+    ru: 'Платформа автоматизации кредитования', 
+    kz: 'Несиелеуді автоматтандыру платформасы', 
+    en: 'Credit Automation Platform' 
+  },
   'hero.title': { 
-    ru: 'Ваш цифровой партнер на рынке fintech', 
-    kz: 'Fintech нарығындағы сіздің цифрлық серіктесіңіз', 
-    en: 'Your Digital Partner in Fintech' 
+    ru: 'Автоматизация кредитования для вашего бизнеса', 
+    kz: 'Бизнесіңіз үшін несиелеуді автоматтандыру', 
+    en: 'Credit Automation for Your Business' 
   },
   'hero.subtitle': { 
-    ru: 'Создаем технологические платформы, которые объединяют банки, МФО, дилеров и партнеров в единую экосистему кредитной автоматизации', 
-    kz: 'Банктерді, МҚҰ-ларды, дилерлерді және серіктестерді несиелік автоматтандырудың бірыңғай экожүйесіне біріктіретін технологиялық платформалар жасаймыз', 
-    en: 'Building technology platforms that unite banks, MFOs, dealers and partners into a single credit automation ecosystem' 
+    ru: 'Полный цикл кредитных решений: от подачи заявки до выдачи средств. Объединяем банки, МФО и дилеров в единую экосистему', 
+    kz: 'Несиелік шешімдердің толық циклі: өтінім беруден қаражат беруге дейін. Банктерді, МҚҰ-ларды және дилерлерді бірыңғай экожүйеге біріктіреміз', 
+    en: 'Complete credit solutions cycle: from application to disbursement. Connecting banks, MFOs and dealers into a unified ecosystem' 
   },
   'hero.cta': { ru: 'Запросить демо', kz: 'Демо сұрау', en: 'Request Demo' },
   'hero.learnMore': { ru: 'Узнать больше', kz: 'Көбірек білу', en: 'Learn More' },
